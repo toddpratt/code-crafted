@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="title">
+    <h1>
+      Things I Like
+    </h1>
+<!--    <a (click)="okayDialog.showModal()">Sign In</a>-->
+    @if (localStorage.getItem('strapiToken')) {
+      <a [routerLink]="['/logout']">Logout</a>
+    } @else {
+      <a [routerLink]="['/login']">Login</a>
+      <a [routerLink]="['/register']">Register</a>
+    }
+  </div>
+
+<!--  <dialog #okayDialog>-->
+<!--    <app-login (login)="login($event); okayDialog.close()" (close)="okayDialog.close()"></app-login>-->
+<!--  </dialog>-->
+
+  <div class="tile-container">
+    <div class="tile color-2">
+      <a target="_blank" href="https://sway.office.com/wcu4SB9MiEeDDag7">
+        <i class="fas fa-camera"></i> Da Nang
+      </a>
+    </div>
+    <div class="tile color-1">
+      <a target="_blank" href="https://sway.office.com/BPFiytNRD2dpnW8Z">
+        <i class="fas fa-camera"></i> Nature
+      </a>
+    </div>
+    <div class="tile color-2">
+      <a target="_blank" href="https://sway.office.com/Nkj0Y3zDmVzU7ozG">
+        <i class="fas fa-camera"></i> Alaska
+      </a>
+    </div>
+    <div class="tile color-3">
+      <a target="_blank" href="https://jsfiddle.net/">
+        <i class="fab fa-jsfiddle"></i> Fiddle
+      </a>
+    </div>
+    <div class="tile color-2">
+      <a target="_blank" href="https://www.youtube.com/watch?v=JLdCoVnESsY">
+        <i class="fab fa-youtube"></i> Beirut
+      </a>
+    </div>
+    <div class="tile color-1">
+      <a target="_blank" href="https://www.amazon.com/gp/product/B00RCTMK6E">
+        <i class="fas fa-socks"></i> Socks
+      </a>
+    </div>
+  </div>
+
+  <img class="photos-illustration" alt="Photos" src="undraw_photograph_re_up3b.svg">
+</div>

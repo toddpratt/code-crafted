@@ -1,0 +1,21 @@
+<h1>Sign In</h1>
+<div class="field">
+  <div>
+    <label for="username">Username</label>
+  </div>
+  <div>
+    <input type="text" id="username" placeholder="Username" [formControl]="username">
+  </div>
+</div>
+<div class="field">
+  <div>
+    <label for="password">Password</label>
+  </div>
+  <div>
+    <input type="password" id="password" placeholder="Password" [formControl]="password">
+  </div>
+</div>
+<div>
+  <button (click)="onLoginClick()">Login</button>
+  <button (click)="close.emit()">Close</button>
+</div>

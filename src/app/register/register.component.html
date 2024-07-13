@@ -1,0 +1,41 @@
+<h1>Register</h1>
+
+<app-entry-field>
+  <div>
+    <label for="username">Username</label>
+  </div>
+  <div>
+    <input type="text" id="username" placeholder="Username" [formControl]="username">
+  </div>
+</app-entry-field>
+
+<app-entry-field>
+  <div>
+    <label for="username">E-mail</label>
+  </div>
+  <div>
+    <input type="text" id="email" placeholder="e-mail" [formControl]="email">
+  </div>
+</app-entry-field>
+
+<app-entry-field>
+  <div>
+    <label for="password1">Password</label>
+  </div>
+  <div>
+    <input type="password" id="password1" placeholder="Password" [formControl]="password1">
+  </div>
+</app-entry-field>
+
+<app-entry-field>
+  <div>
+    <label for="password2">Confirm Password</label>
+  </div>
+  <div>
+    <input type="password" id="password2" placeholder="Confirm Password" [formControl]="password2">
+  </div>
+</app-entry-field>
+
+<app-button-bar>
+  <button (click)="onRegisterClick()">Register</button>
+</app-button-bar>
